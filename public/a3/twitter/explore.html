@@ -12,21 +12,82 @@
     <title>Explore</title>
   </head>
   <body>
-    <div class="wd-search-setting">
-      <form>
-        <input class="wd-searchbar" placeholder="Search Twitter" /><br />
+    <div class="wd-search-section">
+      <form class="wd-input-form">
+        <input
+          class="wd-input-search"
+          type="text"
+          placeholder="Search Twitter"
+        />
       </form>
-      <a class="wd-settingcog" href="explore-settings.html">
-        <i class="fa fa-cog"></i
-      ></a>
+      <a href="explore-settings.html">
+        <i class="fa fa-cog wd-cog fa-lg"></i>
+      </a>
     </div>
-    <ul class="wd-links">
-      <li ><a href="" class="wd-highlighted-link">For you</a></li>
-      <li><a href="">Trending</a></li>
-      <li><a href="">COVID-19</a></li>
-      <li><a href="">News</a></li>
-      <li><a href="">Sports</a></li>
-      <li><a href="">Entertainment</a></li>
-    </ul>
+    <div>
+      <ul class="wd-explore-tabs">
+        <li><a class="wd-first-link">For you</a></li>
+        <li><a>Trending</a></li>
+        <li><a>COVID-19</a></li>
+        <li><a>News</a></li>
+        <li><a>Sports</a></li>
+        <li><a>Entertainment</a></li>
+      </ul>
+    </div>
+    <div class="wd-border"></div>
+    <div>
+      <ul class="wd-suggested-posts"></ulclass>
+        <li>
+        <div class="wd-post-grey">Trending in Science</div>
+        <div>Starship</div>
+        <div class="wd-post-grey">55.5K Tweets</div>
+      </li>
+
+      <li>
+        <div class="wd-post-grey">Sports &middot; Trending</div>
+        <div>Joe Rogan</div>
+        <div class="wd-post-grey">5,218 Tweets</div>
+      </li>
+
+
+      <li class="wd-post-withimg">
+        <div class="wd-post-content">
+        <div>
+        <div>The New York Times <i class="fa fa-check-square"></i>  <span  class="wd-post-grey"> &middot; Yesterday</span></div>
+        <div>CNN's Cuomo conumdrum: A star anchor with a brother in trouble</div>
+      </div>
+      <img src="./cnn.jpg">
+    </div>
+      </li>
+
+      <li class="wd-post-withimg">
+        <div class="wd-post-content">
+        <div>
+          <div class="wd-post-grey">COVID-19 &middot; LIVE</div>
+        <div>COVID-19: News and updates for Massachusetts</div>
+      </div>
+      <img src="./mass.png">
+    </div>
+      </li>
+
+      <li class="wd-post-withimg">
+        <div class="wd-post-content">
+        <div>
+        <div>Bloomberg Opinion <i class="fa fa-check-square"></i>  <span  class="wd-post-grey"> &middot; Yesterday</span></div>
+        <div>Thinking about getting a booster? Read this first.</div>
+      </div>
+      <img src="./covid.jpg">
+    </div>
+      </li>
+
+      <li>
+        <div class="wd-post-grey">Trending in United States</div>
+        <div>Wonder Bread</div>
+        <div class="wd-post-grey">1,259 Tweets</div>
+      </li>
+
+
+      </ul>
+    </div>
   </body>
 </html>
