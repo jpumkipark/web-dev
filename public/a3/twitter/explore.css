@@ -1,0 +1,35 @@
+* {
+  border: rgb(47, 51, 54);
+  list-style: none;
+  text-decoration: none;
+}
+
+.wd-search-setting {
+    display: flex;
+    align-items: center;
+}
+
+.wd-searchbar {
+  color: #ffffff;
+  background-color: darkgrey;
+  padding: 10px 35px 10px 15px;
+  padding-bottom: 5px;
+  margin-right: 12px;
+  border-radius: 20px;
+}
+
+.wd-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.wd-links li a {
+    font-size: 15px;
+    padding: 16px;
+    color: rgb(110, 118, 125);
+}
+.wd-highlighted-link a {
+    color: rgb(29,161,242);
+    border-bottom: 2px solid rgb(29,161,242);
+}
