@@ -59,9 +59,16 @@
 }
 
 .wd-suggested-posts li {
-  padding: 10px 0px;
-  border-top: 1px solid darkgrey;
-  border-bottom: 1px solid darkgrey;
+  padding: 12px 0px;
+  border-top: 1px solid lightgray;
+  border-right:  1px solid lightgray;
+  border-left: 1px solid lightgray;
+
+}
+
+.wd-suggested-posts li:last-child {
+  border-bottom:  1px solid lightgray;
+
 }
 
 .wd-post-grey {
@@ -79,4 +86,102 @@
   height: 100px;
   margin-right: 16px;
   border-radius: 30px;
+}
+
+.wd-post-bookmarks-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px lightgray;
+
+}
+
+.wd-post-dots{
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  
+}
+
+.wd-color-blue {
+  color: rgb(29, 161, 242);
+}
+
+.wd-pl-16 {
+  padding-left: 16px;
+}
+
+.wd-w-100 {
+  width: 100%;
+}
+
+.wd-p-12 {
+  padding: 12px;
+}
+
+.wd-pt-12 {
+  padding-top: 12px;
+}
+
+
+.wd-pr-12 {
+  padding-right: 12px;
+}
+
+.wd-bookmark-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wd-bookmark-main {
+  display: flex;
+}
+
+.wd-bookmark-handle {
+  font-size: 13px;
+  padding-bottom: 12px;
+}
+
+.wd-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.wd-bookmark-f15 {
+  font-size: 15px;
+}
+
+.wd-bookmark-c {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wp-content-paragraph {
+  font-size: 15px;
+  max-width: 506px;
+  margin-bottom: 12px;
+}
+
+.wd-thumnail {
+  border: solid 1px lightgray;
+  max-width: 506px;
+  border-radius: 20px;
+}
+
+.wd-post-features {
+  display: flex;
+  justify-content: space-around;
+  max-width: 506px;
+
+}
+
+.wd-post-features :nth-child(3) {
+  color: red;
+  font-size: 13px;
+}
+
+.wd-post-feature-icon {
+  color: rgb(110, 118, 125);
 }
