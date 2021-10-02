@@ -4,8 +4,12 @@
   text-decoration: none;
   background-color: black;
   color: #ffffff;
+  
 }
 
+body {
+  margin: 0px;
+}
 .wd-input-form {
   width: 100%;
 }
@@ -14,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .wd-input-search {
@@ -162,10 +167,16 @@
   margin-bottom: 12px;
 }
 
+
+
 .wd-thumnail {
   border: solid 1px lightgray;
   max-width: 506px;
   border-radius: 20px;
+}
+
+.wd-thumnail-img {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .wd-post-features {
