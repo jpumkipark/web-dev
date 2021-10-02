@@ -19,6 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wd-input-search {
@@ -59,6 +61,7 @@ body {
 
 .wd-suggested-posts {
   padding-left: 0px;
+  margin-top: 0px;
 }
 
 .wd-suggested-posts li {
