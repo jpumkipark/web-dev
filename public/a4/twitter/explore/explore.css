@@ -1,4 +1,7 @@
-
+body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .btn-tweet {
   width: 100%;
@@ -27,12 +30,11 @@
   color: #ffffff;
   margin-bottom: -40px;
   margin-left: 5px;
-
 }
 
 .twitter-search::placeholder {
- color: gray;
- font-weight: 400;
+  color: gray;
+  font-weight: 400;
 }
 
 .btn-follow {
