@@ -3,9 +3,39 @@
   border-radius: 20px;
 }
 
+.search-glass {
+  position: relative;
+  left: 30px;
+  margin-left: -15px;
+}
+
+.twitter-search {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 42px;
+}
+
+.img-title {
+  position: relative;
+  bottom: 42px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: -40px;
+  margin-left: 5px;
+
+}
+
+.twitter-search::placeholder {
+ color: gray;
+ font-weight: 400;
+}
+
 .btn-follow {
-    border-radius: 20px;
-  }
+  border-radius: 20px;
+}
 
 .ellipsis-wraper {
   width: 10px;
@@ -18,13 +48,19 @@
   object-fit: contain;
 }
 .pa-inherit {
-    padding: inherit;
+  padding: inherit;
 }
 
 .spacex-img {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 .article-img {
   border-radius: 10px;
+}
+
+.twitter-gear {
+  font-size: 25px;
+  cursor: pointer;
+  color: #0d6efd;
 }
