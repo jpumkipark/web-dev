@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
-    <title>Bootstrap</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <h1>Bootstrap</h1>
-      <p>Welcome to Bootstrap!</p>
-      <h2>
-        <a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a>
-      </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Bootstrap</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bootstrap</h1>
+    <p>Welcome to Bootstrap!</p>
+    <h2>
+      <h2><a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a></h2>
       <div class="row">
         <div class="col bg-color-red">
           <h3>Left half</h3>
@@ -50,6 +44,7 @@
           <h3>Sidebar</h3>
         </div>
       </div>
+
       <h2>Responsive grid system</h2>
       <div class="row">
         <div class="col-12 col-md-6 col-xl-3">
@@ -140,11 +135,8 @@
         </tfoot>
       </table>
       <h2>
-        <a
-          href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables"
-        >
-          Responsive tables</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables">
+          Responsive tables</a>
       </h2>
       <div class="table-responsive">
         <table class="table">
@@ -201,45 +193,24 @@
         <li class="list-group-item disabled">Star Wars</li>
       </ul>
       <h3>
-        <a
-          href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons"
-        >
+        <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons">
           Favorite books
         </a>
       </h3>
       <div class="list-group">
-        <a
-          href="https://en.wikipedia.org/wiki/Dune_(novel)"
-          class="list-group-item list-group-item-action active"
-          aria-current="true"
-        >
+        <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active"
+          aria-current="true">
           Dune
         </a>
-        <a
-          href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
-          class="list-group-item list-group-item-action"
-        >
-          Lord of the Rings</a
-        >
-        <a
-          href="https://en.wikipedia.org/wiki/The_Forever_War"
-          class="list-group-item list-group-item-action"
-        >
-          The Forever War</a
-        >
-        <a
-          href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
-          class="list-group-item list-group-item-action"
-        >
-          2001 A Space Odyssey</a
-        >
-        <a
-          href="https://en.wikipedia.org/wiki/Ender%27s_Game"
-          class="list-group-item list-group-item-action disabled"
-          tabindex="-1"
-          aria-disabled="true"
-          >Ender's Game</a
-        >
+        <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
+          Lord of the Rings</a>
+        <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+          The Forever War</a>
+        <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)"
+          class="list-group-item list-group-item-action">
+          2001 A Space Odyssey</a>
+        <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled"
+          tabindex="-1" aria-disabled="true">Ender's Game</a>
       </div>
       <h2>
         <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">
@@ -248,24 +219,12 @@
       </h2>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">
-          Email address</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
+          Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Example textarea</label
-        >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <h3>
         <a href="https://getbootstrap.com/docs/5.1/forms/select/">
@@ -279,40 +238,27 @@
         <option value="3">Three</option>
       </select>
       <h3>
-        <a
-          href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches"
-          >Switches</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
       </h3>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="switch1" />
         <label class="form-check-label" for="switch1">
-          Default switch checkbox input</label
-        >
+          Default switch checkbox input</label>
       </div>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="switch2" checked />
         <label class="form-check-label" for="switch2">
-          Checked switch checkbox input</label
-        >
+          Checked switch checkbox input</label>
       </div>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" id="switch3" disabled />
         <label class="form-check-label" for="switch3">
-          Disabled switch checkbox input</label
-        >
+          Disabled switch checkbox input</label>
       </div>
       <div class="form-check form-switch">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          id="switch4"
-          checked
-          disabled
-        />
+        <input class="form-check-input" type="checkbox" id="switch4" checked disabled />
         <label class="form-check-label" for="switch4">
-          Disabled checked switch checkbox input</label
-        >
+          Disabled checked switch checkbox input</label>
       </div>
       <h3>
         <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
@@ -320,18 +266,9 @@
         </a>
       </h3>
       <label for="range1" class="form-label"> Example range</label>
-      <input
-        type="range"
-        class="form-range"
-        min="0"
-        max="5"
-        step="0.5"
-        id="range1"
-      />
+      <input type="range" class="form-range" min="0" max="5" step="0.5" id="range1" />
       <h3>
-        <a href="https://getbootstrap.com/docs/5.1/forms/input-group/"
-          >Addons</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a>
       </h3>
       <div class="input-group mb-3">
         <span class="input-group-text">$</span>
@@ -344,20 +281,12 @@
         <span class="input-group-text">0.00</span>
       </div>
       <h3>
-        <a
-          href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form"
-          >Responsive forms</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
       </h3>
       <div class="mb-3 row">
         <label for="email1" class="col-sm-2 col-form-label"> Email</label>
         <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="email1"
-            value="email@example.com"
-          />
+          <input type="text" class="form-control" id="email1" value="email@example.com" />
         </div>
       </div>
       <div class="mb-3 row">
@@ -373,10 +302,7 @@
         </div>
       </div>
       <h3>
-        <a
-          href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form"
-          >Responsive forms</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
       </h3>
       <form>
         <div class="row mb-3">
@@ -395,35 +321,15 @@
           <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="r3"
-                value="option1"
-                checked
-              />
+              <input class="form-check-input" type="radio" name="gridRadios" id="r3" value="option1" checked />
               <label class="form-check-label" for="r3"> First radio </label>
             </div>
             <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="r4"
-                value="option2"
-              />
+              <input class="form-check-input" type="radio" name="gridRadios" id="r4" value="option2" />
               <label class="form-check-label" for="r4"> Second radio </label>
             </div>
             <div class="form-check disabled">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="gridRadios"
-                id="r5"
-                value="option3"
-                disabled
-              />
+              <input class="form-check-input" type="radio" name="gridRadios" id="r5" value="option3" disabled />
               <label class="form-check-label" for="r5">
                 Third disabled radio
               </label>
@@ -457,9 +363,7 @@
         </div>
       </div>
       <h2>
-        <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/"
-          >Tabs</a
-        >
+        <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a>
       </h2>
       <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -530,16 +434,13 @@
       <h2>Stacking icons</h2>
       <span class="fa-stack fa-2x">
         <i class="fas fa-square fa-stack-2x"></i>
-        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i> </span
-      ><br />
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i> </span><br />
       <span class="fa-stack fa-2x">
         <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-flag fa-stack-1x fa-inverse"></i> </span
-      ><br />
+        <i class="fas fa-flag fa-stack-1x fa-inverse"></i> </span><br />
       <span class="fa-stack fa-2x">
         <i class="fas fa-camera fa-stack-1x"></i>
-        <i class="fas fa-ban fa-stack-2x" style="color: Tomato"></i> </span
-      ><br />
+        <i class="fas fa-ban fa-stack-2x" style="color: Tomato"></i> </span><br />
       <h2>Rotating icons</h2>
       <div class="fa-4x">
         <i class="fas fa-snowboarding"></i>
@@ -566,6 +467,7 @@
       <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
       <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
       <div class="d-none d-xxl-block fa-2x">XXL</div>
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
