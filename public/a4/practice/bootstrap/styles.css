@@ -7,3 +7,17 @@
   font-size: 2em;
   font-weight: bolder;
 }
+
+.bg-color-red {
+  background-color: red;
+
+}
+
+.bg-color-blue {
+  background-color: blue;
+}
+
+.bg-color-yellow {
+  background-color: yellow;
+  
+}
