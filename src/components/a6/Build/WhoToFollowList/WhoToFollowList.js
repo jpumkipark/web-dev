@@ -18,7 +18,7 @@ const WhoToFollowItem = ({ who }) => {
                 <spn className="pe-1 fw-bolder">{who.userName}</spn>
                 <i className="fa fa-check-circle"></i>
               </div>
-              <div>{who.handle}</div>
+              <div>@{who.handle}</div>
             </div>
           </div>
           <div className="d-flex align-items-center">
