@@ -78,6 +78,10 @@ body {
   font-weight: 500;
 }
 
+.list-group-width {
+  width: -webkit-fill-available;
+}
+
 .wd-bg-yellow {
   background-color: lightyellow;
 }
