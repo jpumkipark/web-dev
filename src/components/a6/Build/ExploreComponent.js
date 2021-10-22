@@ -1,6 +1,6 @@
 import PostSummaryList from "./PostSummaryList";
 import React from "react";
-import SpaceX from "../images/spaceX.jpg";
+
 const ExploreComponent = () => {
   return (
     <>
@@ -45,7 +45,7 @@ const ExploreComponent = () => {
       <ul class="nav mb-2 nav-tabs">
         <ul class="list-group mt-2 list-group-width">
           <li class="list-group-item pa-inherit">
-            <img class="spacex-img" src={SpaceX} />
+            <img class="spacex-img"  src={"../images/spaceX.jpg"}/>
             <div class="img-title">SpaceX's Starship</div>
           </li>
           <PostSummaryList />{" "}
