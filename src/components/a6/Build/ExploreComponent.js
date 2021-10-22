@@ -46,7 +46,7 @@ const ExploreComponent = () => {
         <ul class="list-group mt-2 list-group-width">
           <li class="list-group-item pa-inherit">
             <img class="spacex-img"  src={"../images/spaceX.jpg"}/>
-            <div class="img-title">SpaceX's Starship</div>
+            <div class="img-title" >SpaceX's Starship</div>
           </li>
           <PostSummaryList />{" "}
         </ul>
