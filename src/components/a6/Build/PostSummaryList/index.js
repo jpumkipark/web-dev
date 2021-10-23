@@ -7,7 +7,7 @@ const PostSummaryList = () => {
   return (
     <>
       {posts.map((elem) => {
-        return <PostSummaryItem post={elem} />;
+        return <PostSummaryItem post={elem}  />;
       })}
     </>
   );
