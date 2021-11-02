@@ -1,8 +1,11 @@
-import React from "react";
-import tweets from "./tweets.json";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import TweetListItem from "./TweetListItem";
-import "./tweet.css"
+
+const selectAllTweets = (state) => state.tweets;
+
 const TweetList = () => {
+  const tweets = useSelector(selectAllTweets);
   return (
     <ul className="list-group">
       {tweets.map((tweet) => (
@@ -11,4 +14,5 @@ const TweetList = () => {
     </ul>
   );
 };
+
 export default TweetList;

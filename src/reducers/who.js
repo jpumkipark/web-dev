@@ -1,4 +1,4 @@
-import whoJson from "../components/a7/Build/WhoToFollowList/who.json";
+import whoJson from "./data/who.json";
 
 const who = (state = whoJson) => {
     return(state);
