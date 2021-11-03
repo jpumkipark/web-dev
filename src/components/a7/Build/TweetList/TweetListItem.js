@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 const TweetListItem = ({ tweet }) => {
   const dispatch = useDispatch();
   const deleteTweetClickHandler = () => {
+    console.log("hello")
     dispatch({ type: "delete-tweet", tweet });
   };
   return (

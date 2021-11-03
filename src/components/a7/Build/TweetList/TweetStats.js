@@ -18,7 +18,7 @@ const TweetStats = ({tweet}) => {
         <div className="col" onClick={likeClickHandler}>
             {
                 tweet.liked &&
-                <i className="fas fa-heart me-2"
+                <i className="fa fa-heart me-2"
                    style={{color: tweet.liked ? 'red': "white"}}></i>
             }
             {
