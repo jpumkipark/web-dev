@@ -31,14 +31,18 @@ const WhatsHappening = () => {
             onChange={(event) => setWhatsHappening(event.target.value)}
           ></textarea>
         </div>
-        <hr/>
+        <hr />
         <div className="d-flex justify-content-between mt-1">
           <div className="wb-icon-collection">
             <i className="fa fa-regular fa-image"></i>
-            <i className="fa fa-smile"></i>
+            <i class="fa fa-smile"></i>
             <i className="fa fa-regular fa-calendar"></i>
+            <i class="fa fa-chart-line"></i>
           </div>
-          <button className="btn btn-primary wb-create-tweet-btn" onClick={tweetClickHandler}>
+          <button
+            className="btn btn-primary wb-create-tweet-btn"
+            onClick={tweetClickHandler}
+          >
             Tweet
           </button>
         </div>
