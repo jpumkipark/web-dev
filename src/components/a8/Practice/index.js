@@ -10,8 +10,12 @@ const Practice = () => {
   return (
     <>
       <h1>Practice</h1>
-      <Link to="/a8/twitter/home">Build</Link>
-      <APIExamples/>
+      <div>
+        <Link to="/a6/twitter">Assignment6 </Link>
+        <Link to="/a7/twitter/home">Assignment7</Link>
+      </div>
+      <Link to="/a8/twitter/home">Build : Assignment 8</Link>
+      <APIExamples />
       <ReduxExamples />
       <ConditionalOutput />
       <Styles />

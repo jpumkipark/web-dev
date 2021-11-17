@@ -7,10 +7,9 @@ import "./index.css";
 
 const Build = () => {
   return (
-   
       <div>
         <Route
-          path={["/", "/a7/twitter/home"]}
+          path={["/a7/twitter/home"]}
           exact={true}
           component={HomeScreen}
         />
