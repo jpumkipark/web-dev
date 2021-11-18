@@ -69,7 +69,7 @@ const MovieApiClient = () => {
         </li>
         {movies.map((movie) => (
           <li className="list-group-item" key={movie._id}>
-            {movie.title} {movie.rating} {movie._id}
+            {movie.title} {movie.rating} 
             <button
               onClick={() => setMovie(movie)}
               className="btn btn-primary float-end ms-2"
