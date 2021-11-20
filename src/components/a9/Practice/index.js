@@ -13,9 +13,9 @@ const Practice = () => {
       <div>
         <Link to="/a6/twitter">Assignment6 </Link>
         <Link to="/a7/twitter/home">Assignment7</Link>
+        <Link to="/a8/twitter/home">Assignment 8</Link>
       </div>
-      <Link to="/a8/twitter/home">Build : Assignment 8</Link>
- 
+      <Link to="/a9/twitter/home">Assignment 9</Link>
       <APIExamples />
       <ReduxExamples />
       <ConditionalOutput />
