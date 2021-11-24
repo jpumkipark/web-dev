@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 const MovieApiClient = () => {
   const [movies, setMovies] = useState([]);
-  const [movie, setMovie] = useState({ title: "", rating: 2.5,});
+  const [movie, setMovie] = useState({ title: "", rating: 2.5 });
+  const [ready, setReady] = useState(false);
   useEffect(
     () =>
       fetch("https://web-dev-node-junho.herokuapp.com/api/movies")
         .then((response) => response.json())
-        .then((movies) => setMovies(movies)),
+        .then((movies) => setMovies(movies))
+        .then(() => setReady(true)),
     []
   );
 
@@ -44,47 +46,51 @@ const MovieApiClient = () => {
 
   return (
     <div>
-      <h2>Movies</h2>
-      <ul className="list-group">
-        <li className="list-group-item">
-          <div className="float-end">
-            <button onClick={saveMovie} className="btn btn-primary">
-              Save
-            </button>
+      {ready && (
+        <>
+          <h2>Movies</h2>
+          <ul className="list-group">
+            <li className="list-group-item">
+              <div className="float-end">
+                <button onClick={saveMovie} className="btn btn-primary">
+                  Save
+                </button>
 
-            <button
-              onClick={createMovieClickHandler}
-              className=" ms-2 btn btn-success"
-            >
-              Create
-            </button>
-          </div>
+                <button
+                  onClick={createMovieClickHandler}
+                  className=" ms-2 btn btn-success"
+                >
+                  Create
+                </button>
+              </div>
 
-          <input
-            className="form-control"
-            value={movie.title}
-            onChange={onMovieTitleChange}
-            style={{ width: "70%" }}
-          />
-        </li>
-        {movies.map((movie) => (
-          <li className="list-group-item" key={movie._id}>
-            {movie.title} {movie.rating} 
-            <button
-              onClick={() => setMovie(movie)}
-              className="btn btn-primary float-end ms-2"
-            >
-              Edit
-            </button>
-            <button
-              onClick={() => deleteMovie(movie)}
-              className="btn btn-danger float-end"
-            >
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
+              <input
+                className="form-control"
+                value={movie.title}
+                onChange={onMovieTitleChange}
+                style={{ width: "70%" }}
+              />
+            </li>
+            {movies.map((movie) => (
+              <li className="list-group-item" key={movie._id}>
+                {movie.title} {movie.rating}
+                <button
+                  onClick={() => setMovie(movie)}
+                  className="btn btn-primary float-end ms-2"
+                >
+                  Edit
+                </button>
+                <button
+                  onClick={() => deleteMovie(movie)}
+                  className="btn btn-danger float-end"
+                >
+                  Delete
+                </button>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 };

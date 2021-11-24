@@ -6,6 +6,7 @@ import TodoList from "./Todo/TodoList";
 import ReduxExamples from "../Practice/ReduxEamples/components/index";
 import { Link } from "react-router-dom";
 import APIExamples from "./APIExamples";
+import Movies from "./Movies"
 const Practice = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Practice = () => {
         <Link to="/a8/twitter/home">Assignment 8</Link>
       </div>
       <Link to="/a9/twitter/home">Assignment 9</Link>
+      <Movies/>
       <APIExamples />
       <ReduxExamples />
       <ConditionalOutput />
