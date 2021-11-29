@@ -3,7 +3,7 @@ const HelloApiClient = () => {
   const [hello, setHello] = useState("");
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    fetch("https://web-dev-node-junho.herokuapp.com/hello")
+    fetch("http://localhost:4000/hello")
       .then((response) => response.text())
       .then((text) => setHello(text))
       .then(() => setReady(true));

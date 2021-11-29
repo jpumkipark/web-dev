@@ -5,7 +5,7 @@ const MovieApiClient = () => {
   const [ready, setReady] = useState(false);
   useEffect(
     () =>
-      fetch("https://web-dev-node-junho.herokuapp.com/api/movies")
+      fetch("http://localhost:4000/api/movies")
         .then((response) => response.json())
         .then((movies) => setMovies(movies))
         .then(() => setReady(true)),
@@ -13,7 +13,7 @@ const MovieApiClient = () => {
   );
 
   const deleteMovie = (movie) =>
-    fetch(`https://web-dev-node-junho.herokuapp.com/api/movies/${movie._id}`, {
+    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -23,7 +23,7 @@ const MovieApiClient = () => {
     setMovie({ ...movie, title: event.target.value });
 
   const createMovieClickHandler = () =>
-    fetch("https://web-dev-node-junho.herokuapp.com/api/movies", {
+    fetch("http://localhost:4000/api/movies", {
       method: "POST",
       body: JSON.stringify(movie),
       headers: {
@@ -34,7 +34,7 @@ const MovieApiClient = () => {
       .then((movies) => setMovies(movies));
 
   const saveMovie = () =>
-    fetch(`https://web-dev-node-junho.herokuapp.com/api/movies/${movie._id}`, {
+    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(movie),
       headers: {

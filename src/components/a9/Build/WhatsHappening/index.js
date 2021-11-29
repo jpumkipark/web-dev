@@ -4,9 +4,14 @@ import {
   postNewTweet,
   fetchAllTweets,
 } from "../../../../services/twitterService";
+import service from "../service/service";
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState("");
+
+  const createTweet = () => service.createTweet({ tweet: whatsHappening });
+  // .then((actualMovie) => setMovies([actualMovie, ...movies]));
+
   const dispatch = useDispatch();
   const tweetClickHandler = () => {
     postNewTweet(dispatch, {
@@ -43,7 +48,7 @@ const WhatsHappening = () => {
           </div>
           <button
             className="btn btn-primary wb-create-tweet-btn"
-            onClick={tweetClickHandler}
+            onClick={createTweet}
           >
             Tweet
           </button>
