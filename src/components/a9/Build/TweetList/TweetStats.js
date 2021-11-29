@@ -16,12 +16,7 @@ const TweetStats = ({ tweet }) => {
         <i className="fa fa-retweet me-2"></i>
         {tweet.stats.retweets}
       </div>
-      <div
-        className="col"
-        onClick={() => {
-          likeClickHandler();
-        }}
-      >
+      <div className="col" onClick={likeClickHandler}>
         {tweet.liked && (
           <i
             className="fa fa-heart me-2"
