@@ -1,11 +1,11 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { likeTweet } from "../../../../services/twitterService";
+import React, { useState } from "react";
+import service from "../service/service";
 const TweetStats = ({ tweet }) => {
-  const dispatch = useDispatch();
-  const likeClickHandler = () => {
-    likeTweet(dispatch, tweet);
+  const likeTweet = (t) => {
+    debugger;
+    service.updateTweet(t);
   };
+
   return (
     <div className="row mt-2">
       <div className="col">
@@ -16,7 +16,12 @@ const TweetStats = ({ tweet }) => {
         <i className="fa fa-retweet me-2"></i>
         {tweet.stats.retweets}
       </div>
-      <div className="col" onClick={likeClickHandler}>
+      <div
+        className="col"
+        onClick={() => {
+          likeTweet(tweet);
+        }}
+      >
         {tweet.liked && (
           <i
             className="fa fa-heart me-2"
