@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 const HelloApiClient = () => {
+  const URL = "http://localhost:4000/";
   const [hello, setHello] = useState("");
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:4000/hello")
+    fetch(`${URL}hello`)
       .then((response) => response.text())
       .then((text) => setHello(text))
       .then(() => setReady(true));

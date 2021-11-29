@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 const MovieApiClient = () => {
+  const URL = "http://localhost:4000/";
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState({ title: "", rating: 2.5 });
   const [ready, setReady] = useState(false);
   useEffect(
     () =>
-      fetch("http://localhost:4000/api/movies")
+      fetch(`${URL}api/movies`)
         .then((response) => response.json())
         .then((movies) => setMovies(movies))
         .then(() => setReady(true)),
@@ -13,7 +14,7 @@ const MovieApiClient = () => {
   );
 
   const deleteMovie = (movie) =>
-    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+    fetch(`${URL}api/movies/${movie._id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -23,7 +24,7 @@ const MovieApiClient = () => {
     setMovie({ ...movie, title: event.target.value });
 
   const createMovieClickHandler = () =>
-    fetch("http://localhost:4000/api/movies", {
+    fetch(`${URL}api/movies`, {
       method: "POST",
       body: JSON.stringify(movie),
       headers: {
@@ -34,7 +35,7 @@ const MovieApiClient = () => {
       .then((movies) => setMovies(movies));
 
   const saveMovie = () =>
-    fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+    fetch(`${URL}api/movies/${movie._id}`, {
       method: "PUT",
       body: JSON.stringify(movie),
       headers: {
